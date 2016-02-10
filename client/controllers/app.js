@@ -1,5 +1,7 @@
 Template.home.helpers({
-  
+  list : function() {
+		    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+		}
 });
 
 UI.registerHelper("formatter", function(amount){
@@ -9,8 +11,4 @@ UI.registerHelper("formatter", function(amount){
 Template.home.rendered = function () {
 	$('.button-collapse').sideNav();
     $('.parallax').parallax();
-};
-
-Template.home.list = function() {
-    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 };
